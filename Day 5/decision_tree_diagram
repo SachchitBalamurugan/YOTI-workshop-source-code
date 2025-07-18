@@ -1,0 +1,26 @@
+digraph {
+	A [label="Weather?"]
+	B [label=Overcast]
+	C [label=Sunny]
+	D [label=Rainy]
+	E [label="Temperature?"]
+	F [label="Temperature?"]
+	G [label=Mild]
+	H [label=Mild]
+	Y1 [label=Yes color=lightgreen shape=box style=filled]
+	N1 [label=No color=lightcoral shape=box style=filled]
+	Y2 [label=Yes color=lightgreen shape=box style=filled]
+	N2 [label=No color=lightcoral shape=box style=filled]
+	Y3 [label=Yes color=lightgreen shape=box style=filled]
+	N3 [label=No color=lightcoral shape=box style=filled]
+	A -> B [label=Overcast]
+	A -> C [label=Sunny]
+	A -> D [label=Rainy]
+	B -> Y1
+	C -> E
+	E -> Y2 [label=Mild]
+	E -> N2 [label=Other]
+	D -> F
+	F -> Y3 [label=Mild]
+	F -> N3 [label=Other]
+}
